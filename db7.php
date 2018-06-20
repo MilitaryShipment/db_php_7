@@ -5,7 +5,7 @@ class DB{
     const DEBUG = false;
     const MSSQL = 'mssql';
     const MYSQL = 'mysql';
-    const CONFIG = '/var/www/html/libs/config/.db';
+    const CONFIG = '/var/www/html/.db';
     const PARENPATTERN = '/\)/';
 
     public $query;
