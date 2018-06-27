@@ -41,7 +41,7 @@ class DB{
             $this->username = $this->_env($this->suite . "_DB_USERNAME");
             $this->password = $this->_env($this->suite . "_DB_PASSWORD");
             $this->port = $this->_env($this->suite . "_DB_PORT");
-            $connectionInfo = array("UID"=>$this->username,"PWD"=>$this->password);
+            $connectionInfo = array("UID"=>$this->username,"PWD"=>$this->password,"ReturnDatesAsStrings"=>true);
             $this->con = sqlsrv_connect($this->server,$connectionInfo);
         }else{
             $this->server = $this->_env("MYSQL_DB_HOST");
